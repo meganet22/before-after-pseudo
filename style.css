@@ -1,0 +1,34 @@
+/* welcome color:#745b37;
+buy color:#5b2a02
+
+p:#2c2727; */
+
+
+.btn-coffee{
+    display: block;
+    background-color: #745b37;
+    color: #fff;
+    padding: 10px 15px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-coffee::after{
+    content: "BUY";
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: #5b2a02;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.btn-coffee:hover::after{
+    top: 0px;
+}
